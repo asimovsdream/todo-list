@@ -18,8 +18,5 @@ def write_todos(todos_argument, filepath = FILEPATH):
         file.writelines(todos_argument)  # does not need to return anything
 
 
-right_now = time.strftime("%d %b %Y, %A - %H:%M:%S")
-print(f"Hello, right now is {right_now}")   # executes this line when you run main file
-
 if __name__ == "__main__":  # does not execute this line when you run main file
     print(get_todos())

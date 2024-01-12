@@ -1,7 +1,12 @@
 # functions are in another python file
+import time
 
 from functions import get_todos, write_todos
 # or you can write 'import functions' and write functions.get_todos() in the code
+
+right_now = time.strftime("%d %b %Y, %A - %H:%M:%S")
+print(f"Hello, right now is {right_now}")   # executes this line when you run main file
+
 
 while True:
     user_decision = input("add, show, edit, complete or exit? ")

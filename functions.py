@@ -1,8 +1,7 @@
-import time
 FILEPATH = "todolist.txt"
 
 
-def get_todos(filepath=FILEPATH):     # creating a custom function for repetitive codes
+def get_todos(filepath=FILEPATH):
     """ Read a text file and return the list of
     to-do items.
     """
@@ -12,11 +11,10 @@ def get_todos(filepath=FILEPATH):     # creating a custom function for repetitiv
 
 
 def write_todos(todos_argument, filepath = FILEPATH):
-# Non-default parameters should come first in a function definition, then the default parameters.
     """ Write the to-do items in the text file."""
-    with open(filepath, 'w') as file:  # w is for write; must be 'r' for read
-        file.writelines(todos_argument)  # does not need to return anything
+    with open(filepath, 'w') as file:
+        file.writelines(todos_argument)
 
 
-if __name__ == "__main__":  # does not execute this line when you run main file
+if __name__ == "__main__":
     print(get_todos())
